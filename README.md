@@ -1,7 +1,7 @@
 # Test Automation Pack — SWAPI (API) + Drogasil (Web)
 
 Este repositório contém **duas automações de testes** com relatórios **Allure**.  
-Os **casos de teste estão na raiz**:
+Os **casos de teste estão na raiz do projeto**:
 
 - `TEST_CASES_API.md` — Casos de teste da API (SWAPI)  
 - `TEST_CASES_WEB.md` — Casos de teste Web (login Drogasil)  
@@ -12,13 +12,13 @@ Projetos incluídos:
 
 ---
 
-## 🚀 Pré-requisitos gerais
+## Pré-requisitos gerais:
 - **Java 8+** (necessário para o Allure CLI)  
 - **Allure CLI** instalado e disponível no PATH  
   - Docs: https://allurereport.org/docs/gettingstarted-installation  
 - Internet habilitada (para acessar SWAPI e o site)  
 
-> Dica: valide a instalação do Allure com `allure --version`.
+> Obs.: validar a instalação do Allure com `allure --version`.
 
 ---
 
@@ -33,7 +33,7 @@ Projetos incluídos:
 ```bash
 cd swapi-behave
 python -m venv .venv
-# .venv\Scripts\activate
+.venv\Scripts\activate
 pip install -r requirements.txt
 ````
 ## 1) Executar os testes e salvar os resultados do Allure
