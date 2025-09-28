@@ -33,17 +33,13 @@ Projetos incluídos:
 ```bash
 cd swapi-behave
 python -m venv .venv
-# Windows:
 # .venv\Scripts\activate
-# Linux/Mac:
-source .venv/bin/activate
-
 pip install -r requirements.txt
-
-# 1) Executar os testes e salvar os resultados do Allure
+````
+## 1) Executar os testes e salvar os resultados do Allure
 behave -f allure_behave.formatter:AllureFormatter -o allure-results
 
-# 2) Abrir o relatório (modo servidor - abre no navegador)
+## 2) Abrir o relatório (modo servidor - abre no navegador)
 allure serve allure-results
 
 # (opção alternativa)
@@ -62,7 +58,8 @@ allure open allure-report
 ```bash
 cd drogasil-cypress
 npm install
-#Como executar (headless) + gerar relatório Allure
+````
+#Como executar (headless) + gerar relatório Allure:
 # 1) Limpar resultados anteriores
 npm run allure:clear
 
