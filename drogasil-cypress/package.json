@@ -1,0 +1,19 @@
+{
+  "name": "drogasil-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run",
+    "allure:clear": "rimraf allure-results allure-report || true",
+    "allure:generate": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.0",
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.27.0",
+    "rimraf": "^5.0.5"
+  }
+}
